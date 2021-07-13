@@ -2,15 +2,15 @@ import "./HeaderBar.css";
 
 const HeaderBar = () => {
   return (
-    <div class="nav-wrapper mainheader">
+    <div className="nav-wrapper mainheader">
       <form>
-        <div class="input-field">
+        <div className="input-field">
           <input id="search" type="search" required placeholder="Search Lists..."></input>
-          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <label className="label-icon" for="search"><i className="material-icons">search</i></label>
         </div>
       </form>
 
-      <a href="#" class="brand-logo">Brello</a>
+      <a href="#" className="brand-logo">Brello</a>
     </div>
 
   );
