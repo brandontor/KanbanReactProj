@@ -1,4 +1,5 @@
 .list-img {
+<<<<<<< HEAD
     height: 125px;
     width: 100%;
 }
@@ -6,4 +7,8 @@
 img {
     width: 100%;
     height: 100%;
+=======
+    height: 100px;
+    width: 100%;
+>>>>>>> 6a8d015 (dom tree restructuring, added some static ele)
 }
