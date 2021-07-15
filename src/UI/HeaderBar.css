@@ -4,13 +4,20 @@
     background-color: rgb(9, 16.9, 30.2, 0.32);
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     position: relative;
+=======
+>>>>>>> main
 }
 
 .mainheader a {
     color: black;
     position: relative;
+<<<<<<< HEAD
     left: 47%;
+=======
+    left: 40%;
+>>>>>>> main
     font-size: 20px;
 }
 
@@ -21,8 +28,11 @@
 
 .mainheader form {
     width: 10%;
+<<<<<<< HEAD
     position: absolute;
     left: 2%;
+=======
+>>>>>>> main
 }
 
 .mainheader input {
