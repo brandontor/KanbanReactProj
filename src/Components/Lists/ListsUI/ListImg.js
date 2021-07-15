@@ -1,5 +1,4 @@
 import './ListImg.css'
-<<<<<<< HEAD
 import alliance from './ImgAssets/alliance.jpg'
 import horde from './ImgAssets/horde.jpg'
 import spiderman from './ImgAssets/spiderman.png'
@@ -14,13 +13,6 @@ const ListImg = () => {
     return (
         <div className='list-img'>
             <img src={randomImg}></img>
-=======
-
-const ListImg = () => {
-    return (
-        <div className='list-img'>
-            
->>>>>>> main
         </div>
     );
 };
