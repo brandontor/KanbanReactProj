@@ -6,9 +6,5 @@
   flex-direction: column;
   position: relative;
   max-width: 250px;
-<<<<<<< HEAD
   margin: 50px 10px 0px 10px;
-=======
-  margin: 10px 10px 0px 10px;
->>>>>>> 6a8d015 (dom tree restructuring, added some static ele)
 }

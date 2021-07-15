@@ -10,11 +10,7 @@
 .mainheader a {
     color: black;
     position: relative;
-<<<<<<< HEAD
     left: 47%;
-=======
-    left: 40%;
->>>>>>> 6a8d015 (dom tree restructuring, added some static ele)
     font-size: 20px;
 }
 

@@ -10,11 +10,7 @@ const HeaderBar = () => {
         </div>
       </form>
 
-<<<<<<< HEAD
       <a href="#" className="brand-logo">Brello<i class="fab fa-angellist"></i></a>
-=======
-      <a href="#" className="brand-logo">Brello</a>
->>>>>>> 6a8d015 (dom tree restructuring, added some static ele)
     </div>
 
   );
