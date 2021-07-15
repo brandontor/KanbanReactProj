@@ -1,0 +1,6 @@
+.body { 
+    height: 100%;
+    background-image: url(./UIAssets/photo-1576502200916-3808e07386a5.jpg);
+    background-size: cover;
+    overflow-y: clip;
+}
