@@ -10,7 +10,7 @@ const HeaderBar = () => {
         </div>
       </form>
 
-      <a href="#" className="brand-logo">Brello</a>
+      <a href="#" className="brand-logo">Brello<i class="fab fa-angellist"></i></a>
     </div>
 
   );

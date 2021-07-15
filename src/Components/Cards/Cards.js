@@ -2,8 +2,8 @@ import  './Cards.css'
 
 const Cards = () => {
     return (
-        <div>
-            
+        <div className='add-cards'>
+            <p></p>
         </div>
     );
 }

@@ -2,7 +2,9 @@ import './ListFooter.css'
 
 const ListFooter = () => {
     return (
-        <div></div>
+        <div className='list-footer'>
+            <button></button>
+        </div>
     )
 };
 
