@@ -1,2 +1,3 @@
 App 
 
+For the card text I will need to pass props from a text input into a card component as a prop  
