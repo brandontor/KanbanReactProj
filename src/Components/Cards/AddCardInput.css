@@ -1,0 +1,33 @@
+.list-input {
+    height: 100px;
+    width: 100px;
+}
+
+#text-field{
+    outline: none;
+    resize: none;
+    border: none;
+    width: 70%;
+    border-bottom: 1px solid #9e9e9e;
+    line-height: normal;
+    overflow-y: hidden;
+    resize: none;
+    min-height: 3rem;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+#text-icon {
+    margin-left: 5px;
+}
+
+#text-form_none {
+    display: none;
+}
+
+#text-form_block {
+    display: block;
+}
+ 

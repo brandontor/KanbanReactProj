@@ -1,10 +1,39 @@
 .list-items {
   background-color: hsl(228, 14%, 93%);
-  border-radius: 3px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: black;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   position: relative;
-  max-width: 250px;
-  margin: 10px 10px 0px 10px;
+  width: 250px;
+  margin: 0px 10px 0px 10px;
+  height: 100%;
+}
+
+.list-item-wrapper {
+  max-height: 90%;
+}
+
+.list-footer { 
+  width: 100%;
+  margin-top: 10px;
+}
+
+.add-list-card {
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
+
+#text-form_none {
+  display: none;
+}
+
+#text-form_block {
+  display: block
+}
+
+.list-footer-card-wrapper {
+  display: flex;
 }
