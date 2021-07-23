@@ -1,9 +1,9 @@
 import './ListHeader.css'
 
-const ListHeader = () => {
+const ListHeader = ({listName}) => {
     return (
         <div className="list-header">
-            <h2>Hello World</h2>
+            <h2>{listName}</h2>
         </div>
     );
 }

@@ -1,6 +1,8 @@
-.list-img {
+#list-img {
     height: 125px;
-    width: 100%;
+    width: 95%;
+    border-radius: 10px;
+    margin: 5px;
 }
 
 img {
