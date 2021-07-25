@@ -28,4 +28,5 @@
 .mainheader input {
     height: 20px;
     width: 200px; 
+    min-width: 90px;
 }

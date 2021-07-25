@@ -16,7 +16,6 @@ const AddCard = ({ setListName, listName }) => {
     }
 
     const addListSubmitHandler = (e) => {
-
         if(listText == ''){
             alert('Empty field')
         } else {
@@ -31,10 +30,7 @@ const AddCard = ({ setListName, listName }) => {
             setListText('')
             addListHandler()
         }  
-
-      
     }
-
 
 
     return (

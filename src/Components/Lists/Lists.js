@@ -47,7 +47,7 @@ const Lists = ({ listName, randomImg }) => {
         <ListHeader listName={listName}></ListHeader>
         <ListImg randomImg={randomImg}></ListImg>
         {newCardTask.map(card => (
-          <ListCard cardText={card.card}></ListCard>
+          <ListCard cardText={card.card} setNewCardTask={setNewCardTask} newCardTask={newCardTask}></ListCard>
         ))}
         <div className='list-footer'>
           <ListInput inputVisibility={inputVisibility} cardText={cardText} setNewCardText={setNewCardText}></ListInput>
