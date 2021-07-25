@@ -1,19 +1,37 @@
 import './ListCard.css'
+import React,{useState} from 'react'
 
-const ListCard = ({ cardText }) => {
+const ListCard = ({ cardText, newCardTask, setNewCardTask }) => {
 
+    const [underLineStyle, setUnderLineStyle] = useState({
+        textDecoration: 'none',
+    })
+    
+    const completeCardHandler = () => {
+        if(underLineStyle.textDecoration == 'none') {
+            setUnderLineStyle({
+                textDecoration: 'line-through',
+                color: 'green'
+            })
+        } else if(underLineStyle.textDecoration == 'line-through') {
+            setUnderLineStyle({
+                textDecoration: 'none',
+                color: 'inherit'
+            })
+        }
+    }
     
 
-    const checkHandler = () => {
+    const deleteCardHandler = () => {
         
     }
 
     return (
         <div className="new-list-card">
-            <p>{cardText}</p>
+            <p style={underLineStyle}>{cardText}</p>
             <div className="icon-holder">
-                <i class="far fa-check-square" onClick={checkHandler}></i>
-                <i class="far fa-minus-square"></i>
+                <i class="far fa-check-square" onClick={completeCardHandler}></i>
+                <i class="far fa-minus-square" /*onClick={deleteCardHandler}*/></i>
             </div>
         </div>
     );
