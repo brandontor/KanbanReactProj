@@ -1,4 +1,8 @@
 .main {
     margin-top: 10px;
     display: flex;
+    height: 90%;
+    max-width: 100%;
+    overflow-x: auto;
 }
+

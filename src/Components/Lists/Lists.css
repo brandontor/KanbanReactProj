@@ -1,18 +1,14 @@
-.list-items {
+.list-items-wrapper {
   background-color: hsl(228, 14%, 93%);
   border-radius: 10px;
   border: 1px solid black;
-  box-shadow: black;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   position: relative;
   width: 250px;
   margin: 0px 10px 0px 10px;
-  height: 100%;
-}
-
-.list-item-wrapper {
+  min-height: 225px;
   max-height: 90%;
 }
 
