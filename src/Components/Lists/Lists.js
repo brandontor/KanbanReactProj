@@ -7,7 +7,7 @@ import React, { useState } from "react";
 
 
 
-const Lists = ({ listName, randomImg }) => {
+const Lists = ({ listName, randomImg, setListName, listTitle, list}) => {
 
 
   const [newCardTask, setNewCardTask] = useState([])
@@ -33,21 +33,20 @@ const Lists = ({ listName, randomImg }) => {
           id: Math.random() * 1000
         }
       ])
-      console.log(newCardTask)
       setNewCardText('')
       showInputHandler()
     }
   }
 
-
+  
 
   return (
     <div className='list-items'>
       <div className='list-items-wrapper'>
-        <ListHeader listName={listName}></ListHeader>
+        <ListHeader listTitle={listTitle} setListName={setListName} listName={listName} list={list}></ListHeader>
         <ListImg randomImg={randomImg}></ListImg>
         {newCardTask.map(card => (
-          <ListCard cardText={card.card} setNewCardTask={setNewCardTask} newCardTask={newCardTask}></ListCard>
+          <ListCard cardText={card.card} setNewCardTask={setNewCardTask} newCardTask={newCardTask} key={card.id}></ListCard>
         ))}
         <div className='list-footer'>
           <ListInput inputVisibility={inputVisibility} cardText={cardText} setNewCardText={setNewCardText}></ListInput>

@@ -1,4 +1,16 @@
+.list-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .list-header h2 {
     font-size: 14px;
     margin: 10px 0px 10px 10px;
+}
+
+.list-header i {
+    margin-right: 15px;
+    cursor: pointer;
 }

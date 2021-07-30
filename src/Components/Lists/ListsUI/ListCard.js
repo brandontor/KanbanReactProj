@@ -1,12 +1,12 @@
 import './ListCard.css'
 import React,{useState} from 'react'
 
-const ListCard = ({ cardText, newCardTask, setNewCardTask }) => {
+const ListCard = ({ cardText, newCardTask, setNewCardTask}) => {
 
     const [underLineStyle, setUnderLineStyle] = useState({
         textDecoration: 'none',
     })
-    
+
     const completeCardHandler = () => {
         if(underLineStyle.textDecoration == 'none') {
             setUnderLineStyle({
@@ -22,8 +22,9 @@ const ListCard = ({ cardText, newCardTask, setNewCardTask }) => {
     }
     
 
-    const deleteCardHandler = () => {
+    const deleteCardHandler = (e) => {
         
+        setNewCardTask(newCardTask.filter(el => el.card !== e.currentTarget.parentElement.parentElement.textContent))
     }
 
     return (
@@ -31,7 +32,7 @@ const ListCard = ({ cardText, newCardTask, setNewCardTask }) => {
             <p style={underLineStyle}>{cardText}</p>
             <div className="icon-holder">
                 <i class="far fa-check-square" onClick={completeCardHandler}></i>
-                <i class="far fa-minus-square" /*onClick={deleteCardHandler}*/></i>
+                <i class="far fa-minus-square" onClick={deleteCardHandler}></i>
             </div>
         </div>
     );

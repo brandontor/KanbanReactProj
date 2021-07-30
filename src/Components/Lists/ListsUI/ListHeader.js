@@ -1,9 +1,16 @@
 import './ListHeader.css'
 
-const ListHeader = ({listName}) => {
+const ListHeader = ({listName, setListName, listTitle, list}) => {
+
+
+    const deleteListHandler = () => {
+        setListName(listName.filter(el => el.id !== list.id))
+    }
+
     return (
         <div className="list-header">
-            <h2>{listName}</h2>
+            <h2>{listTitle}</h2>
+            <i class="fas fa-times" onClick={deleteListHandler}></i>
         </div>
     );
 }
