@@ -15,15 +15,15 @@ const Lists = ({ listName, randomImg, setListName, listTitle, list}) => {
   const [inputVisibility, setInputVisibility] = useState("none")
 
   const showInputHandler = () => {
-    if (inputVisibility == "none") {
+    if (inputVisibility === "none") {
       setInputVisibility("block")
-    } else if (inputVisibility == "block") {
+    } else if (inputVisibility === "block") {
       setInputVisibility("none")
     }
   }
 
   const addNewCardHandler = () => {
-    if (cardText == '') {
+    if (cardText === '') {
       alert('Empty field')
     } else {
       setNewCardTask([

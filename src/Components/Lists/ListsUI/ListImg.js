@@ -15,13 +15,9 @@ const ListImg = React.memo(() => {
     let randomNumber = Math.floor(Math.random() * availableImgs.length)
     let randomImg = availableImgs[randomNumber]
 
-    const addImageHandler = () => {
-        
-    }
-
     return (
         <div id='list-img'>
-            <img src={randomImg}></img>
+            <img src={randomImg} alt="random-img"></img>
         </div>
     );
 });

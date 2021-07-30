@@ -8,12 +8,12 @@ const ListCard = ({ cardText, newCardTask, setNewCardTask}) => {
     })
 
     const completeCardHandler = () => {
-        if(underLineStyle.textDecoration == 'none') {
+        if(underLineStyle.textDecoration === 'none') {
             setUnderLineStyle({
                 textDecoration: 'line-through',
                 color: 'green'
             })
-        } else if(underLineStyle.textDecoration == 'line-through') {
+        } else if(underLineStyle.textDecoration === 'line-through') {
             setUnderLineStyle({
                 textDecoration: 'none',
                 color: 'inherit'

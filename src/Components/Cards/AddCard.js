@@ -10,22 +10,22 @@ const AddCard = ({ setListName, listName }) => {
     let buttonText = 'Add List'
     console.log(listName)
 
-    if (listName == '') {
+    if (listName === '') {
         buttonText = 'Start'
     } else {
         buttonText = 'Add List'
     }
 
     const addListHandler = () => {
-        if (addListVisibility == "none") {
+        if (addListVisibility === "none") {
             setListVisibility("block")
-        } else if (addListVisibility == "block") {
+        } else if (addListVisibility === "block") {
             setListVisibility("none")
         }
     }
 
     const addListSubmitHandler = (e) => {
-        if(listText == ''){
+        if(listText === ''){
             alert('Empty field')
         } else {
             setListName([

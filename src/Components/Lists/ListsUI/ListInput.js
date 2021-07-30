@@ -1,5 +1,4 @@
 import './ListInput.css'
-import React,{useState} from 'react'
 
 const ListInput = ({inputVisibility, cardText, setNewCardText}) => {
 
