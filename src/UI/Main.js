@@ -5,11 +5,11 @@ import AddCard from '../Components/Cards/AddCard'
 
 const Main = ({ listName, setListName }) => {
 
-
+    
     return (
         <div className='main'>
             {listName.map(list => (
-                <Lists listName={list.list}></Lists>
+                <Lists listTitle={list.list} listName={listName} setListName={setListName} key={list.id} list={list}></Lists>
             ))}
             <AddCard listName={listName} setListName={setListName}></AddCard>
         </div>
