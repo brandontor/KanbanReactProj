@@ -30,4 +30,8 @@
 #text-form_block {
     display: block;
 }
+
+textarea::placeholder {
+    color: black;
+}
  

@@ -7,6 +7,15 @@ const AddCard = ({ setListName, listName }) => {
     const [addListVisibility, setListVisibility] = useState("none");
     const [listText, setListText] = useState('')
 
+    let buttonText = 'Add List'
+    console.log(listName)
+
+    if (listName == '') {
+        buttonText = 'Start'
+    } else {
+        buttonText = 'Add List'
+    }
+
     const addListHandler = () => {
         if (addListVisibility == "none") {
             setListVisibility("block")
@@ -39,7 +48,7 @@ const AddCard = ({ setListName, listName }) => {
                 <AddCardInput addListVisibility={addListVisibility} setListText={setListText} listText={listText}></AddCardInput>
             </div>
             <div className="btn-container">
-                <button className="waves-effect waves-light btn-small #9e9e9e grey add-card-btn" onClick={addListHandler}>Add List</button>
+                <button className="waves-effect waves-light btn-small #9e9e9e grey add-card-btn" onClick={addListHandler}>{buttonText}</button>
                 <button className="waves-effect waves-light btn-small add-card-btn" style={{ display: `${addListVisibility}` }} onClick={addListSubmitHandler}>Add</button>
             </div>
         </div>
