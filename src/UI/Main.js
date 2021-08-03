@@ -3,9 +3,9 @@ import Lists from '../Components/Lists/Lists';
 import AddCard from '../Components/Cards/AddCard'
 
 
-const Main = ({ listName, setListName }) => {
+const Main = ({ listName, setListName}) => {
 
-    
+   
     return (
         <div className='main'>
             {listName.map(list => (
