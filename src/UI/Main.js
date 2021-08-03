@@ -10,7 +10,7 @@ const Main = ({ listName, setListName, searchTerm, setSearchTerm}) => {
     return (
         <div className='main'>
             {listName.filter(function(list) {
-                if (searchTerm == undefined) {
+                if (searchTerm === undefined) {
                     return list
                 } else if (list.list.toLowerCase().includes(searchTerm.toLowerCase())) {
                     return list
