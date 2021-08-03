@@ -8,7 +8,6 @@ const AddCard = ({ setListName, listName }) => {
     const [listText, setListText] = useState('')
 
     let buttonText = 'Add List'
-    console.log(listName)
 
     if (listName === '') {
         buttonText = 'Start'

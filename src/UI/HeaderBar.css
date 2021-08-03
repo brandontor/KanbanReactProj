@@ -7,6 +7,20 @@
     position: relative;
 }
 
+#input-field {
+    margin-top: 2rem;
+}
+#search {
+    position: relative;
+    margin-bottom: 1rem;
+    padding-left: 23px;
+    transition: 0.2s;
+}
+
+#search:focus {
+    background-color: white;
+}
+
 .mainheader h1 {
     margin: 0;
     color: black;
