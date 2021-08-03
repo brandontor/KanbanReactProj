@@ -50,7 +50,6 @@ const Lists = ({ listName, randomImg, setListName, listTitle, list}) => {
         ))}
         <div className='list-footer'>
           <ListInput inputVisibility={inputVisibility} cardText={cardText} setNewCardText={setNewCardText}></ListInput>
-
           <div className="list-footer-card-wrapper">
             <button className="waves-effect waves-light btn-small #9e9e9e grey add-list-card" onClick={showInputHandler}>Add Card</button>
             <button className="waves-effect waves-light btn-small add-list-card" style={{ display: `${inputVisibility}` }} onClick={addNewCardHandler}>Add</button>

@@ -7,12 +7,11 @@ import React, { useState } from "react";
 const Body = () => {
 
   const [listName, setListName] = useState([]);
-  const [searchTerm, setSearchTerm] =useState()
 
   return (
     <div className="body">
-      <HeaderBar listName={listName} setListName={setListName} searchTerm={searchTerm} setSearchTerm={setSearchTerm}></HeaderBar>
-      <Main listName={listName} setListName={setListName} searchTerm={searchTerm} setSearchTerm={setSearchTerm}></Main>
+      <HeaderBar></HeaderBar>
+      <Main listName={listName} setListName={setListName}></Main>
     </div>
   );
 };
