@@ -14,6 +14,8 @@ const Main = ({ listName, setListName, searchTerm, setSearchTerm}) => {
                     return list
                 } else if (list.list.toLowerCase().includes(searchTerm.toLowerCase())) {
                     return list
+                } else {
+                    return false
                 }
             }).map(list => (
                 <Lists listTitle={list.list} listName={listName} setListName={setListName} key={list.id} list={list}></Lists>
