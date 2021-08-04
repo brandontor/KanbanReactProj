@@ -1,5 +1,19 @@
 Tech stack used for project (HTML, CSS, Materialize CSS, JS, React JS (Components, props, state, etc..)
 
+<h1>HOW TO USE?</h1><br>
+
+First add a list, which will represent a specific category of tasks. The input will accept any characters but will give an error if the field is left empty on submit.<br>
+<img src="https://user-images.githubusercontent.com/53887678/128109170-c79f602f-4dfe-42e3-9b51-eaa2c3a6801d.png"></img>
+
+Once a list is created, you can add individual task "cards" that fall into that list category.<br>
+<img src="https://user-images.githubusercontent.com/53887678/128109261-b223f903-547f-4f4d-9728-52368d61a9fe.png"></img>
+
+
+once complete you can either mark complete or delete the task.<br>
+<img src="https://user-images.githubusercontent.com/53887678/128109306-69198a94-117c-4591-ba76-f4ae475c1ed7.png"><img>
+
+<br><br>
+
 This was my first practice project using React :grin:. I am currently still learning React and at the time of working on the project was using various resources like Youtube and Udemy to learn basic react skills and then taking them and implementing in my own project. 
 
 I wanted to base this project off of the Kanban style organization lists found on https://trello.com/en. 
