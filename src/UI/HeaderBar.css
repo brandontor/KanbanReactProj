@@ -31,3 +31,13 @@
     width: 200px; 
     min-width: 90px;
 }
+
+.github {
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    left: 90%;
+    color: black;
+    width: 115px;
+}

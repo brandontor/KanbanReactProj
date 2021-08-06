@@ -39,6 +39,8 @@ First add a list, which will represent a specific category of tasks. The input w
 
 Once a list is created, you can add individual task "cards" that fall into that list category.
 
+=======
+
 <img src="https://user-images.githubusercontent.com/53887678/128109261-b223f903-547f-4f4d-9728-52368d61a9fe.png" alt="List container titled homework with an add card button, same default app background." width="200">
 
 once complete you can either mark complete or delete the task.
@@ -81,3 +83,4 @@ $ npm start
 You should now have a development server running in your default browser.
 
 See this section about [Deployment](https://create-react-app.dev/docs/deployment/) for more information.
+

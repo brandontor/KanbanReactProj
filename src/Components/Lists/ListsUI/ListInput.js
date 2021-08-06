@@ -3,9 +3,9 @@ import './ListInput.css'
 const ListInput = ({inputVisibility, cardText, setNewCardText}) => {
 
 
-    const cardInputHandler = (e) => {
+    const cardInputHandler = (e) => { //this function is responsible for lifting the cardText state up to the List
         setNewCardText(e.target.value)
-    }
+    } 
 
     return (
             <form className="col s12" id={inputVisibility} style={{display: `${inputVisibility}`}}>

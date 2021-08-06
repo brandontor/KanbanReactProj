@@ -2,7 +2,7 @@ import './AddCardInput.css'
 
 const AddCardInput = ({addListVisibility, setListText, listText}) => {
 
-    const textAreaHandler = (e) => {
+    const textAreaHandler = (e) => { //responsible for lifting listText state up to the list component
         setListText(e.target.value)
     }
    

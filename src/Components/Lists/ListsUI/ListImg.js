@@ -9,11 +9,11 @@ import dune from './ImgAssets/dune.jpg'
 import React from 'react'
 
 
-const ListImg = React.memo(() => {
+const ListImg = React.memo(() => { //React.memo here to ensure the component does not re-render
 
-    const availableImgs = [alliance, horde, spiderman, stormtrooper, akuma, lotr, dune];
+    const availableImgs = [alliance, horde, spiderman, stormtrooper, akuma, lotr, dune]; //img array
     let randomNumber = Math.floor(Math.random() * availableImgs.length)
-    let randomImg = availableImgs[randomNumber]
+    let randomImg = availableImgs[randomNumber] //randomizing img's 
 
     return (
         <div id='list-img'>
