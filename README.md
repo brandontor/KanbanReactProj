@@ -1,12 +1,11 @@
 
 # KanBan React Project  
----
+
 Hi there :wave:. This is a web app i've built which is essentially a to-do list with a [Kanban](https://kanbanize.com/kanban-resources/getting-started/what-is-kanban) organization style twist. This is a project I started to teach myself react. It is a create-react-app built with Materialize Css which features Hooks, state, and the use of props.
 <br><br>
 
 > "Kanban is a workflow management method for defining, managing, and improving services that deliver knowledge work."     
 ## Things I've Learned 
----
 
 
 This project was started to teach myself React. I used various resources to learn React basics while also referring to the React docs (Top shelf documentation :ok_hand:) and stack overflow for clarification when needed.
@@ -18,7 +17,6 @@ Overall, im feeling really good about the experience and am really enjoying Reac
 
 <br><br>
 ## Potential Future Features
----
 
 * I would like to find a way to speed up the application, I am finding that the imgs take a little long to load.
 
@@ -28,7 +26,6 @@ Overall, im feeling really good about the experience and am really enjoying Reac
 
 * After learning more about React i've now realised things like Redux and styled components and Material UI exist so I would want to implement those or use them in future projects from the start. 
 ## How it works?
----
 This project is based on a kanban template found on [Trello](https://trello.com/en). I figured that this would be a perfect implementation for using/learning React and later found out that Trello used React to develop their app as well. 
 
 <img src="https://user-images.githubusercontent.com/53887678/128098843-51553bec-be76-4882-9760-b0aadf94746b.png" alt="Kanban organization list with some cards added to the lists, from Trello" width="250"/>
@@ -47,12 +44,10 @@ once complete you can either mark complete or delete the task.
 <img src="https://user-images.githubusercontent.com/53887678/128109306-69198a94-117c-4591-ba76-f4ae475c1ed7.png" alt="List container titled homework with two card tasks underneath, one titled Math homework marked complete and one titled English homework not marked complete" width="200">
 
 ## Deployment
----
 Deployed with [Netlify](https://www.netlify.com/)
 <br><br>
 
 ## Get Started
----
 
 From your command line, first clone the repo.
 
