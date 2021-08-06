@@ -1,6 +1,8 @@
 import "./HeaderBar.css";
 
 const HeaderBar = () => {
+  //Basic static Header component, in the future I may return and add a searchbar. 
+
 
   return (
 

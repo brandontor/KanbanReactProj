@@ -4,18 +4,18 @@ import './AddCard.css'
 
 const AddCard = ({ setListName, listName }) => {
 
-    const [addListVisibility, setListVisibility] = useState("none");
-    const [listText, setListText] = useState('')
+    const [addListVisibility, setListVisibility] = useState("none"); //this state contains styling for the text area button 
+    const [listText, setListText] = useState('') //this state contains the text which will be collected from the text area
 
-    let buttonText = 'Add List'
+    let buttonText = 'Add List' //default text for button when there are no lists
 
-    if (listName === '') {
+    if (listName === '') { //validation - this will change the text to Add List if there are already other lists
         buttonText = 'Start'
     } else {
         buttonText = 'Add List'
     }
 
-    const addListHandler = () => {
+    const addListHandler = () => { //this function is responsible for displaying or hiding the text area
         if (addListVisibility === "none") {
             setListVisibility("block")
         } else if (addListVisibility === "block") {
@@ -23,8 +23,8 @@ const AddCard = ({ setListName, listName }) => {
         }
     }
 
-    const addListSubmitHandler = (e) => {
-        if(listText === ''){
+    const addListSubmitHandler = (e) => { //this will add to the listName array 
+        if(listText === ''){ //validation to ensure no array items with empty text
             alert('Empty field')
         } else {
             setListName([
@@ -35,8 +35,8 @@ const AddCard = ({ setListName, listName }) => {
                 }
             ])
 
-            setListText('')
-            addListHandler()
+            setListText('') //reset text 
+            addListHandler()// hide text area after submit
         }  
     }
 

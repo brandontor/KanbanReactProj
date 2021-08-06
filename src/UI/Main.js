@@ -5,6 +5,7 @@ import AddCard from '../Components/Cards/AddCard'
 
 const Main = ({ listName, setListName}) => {
 
+    //Here I am mapping my lists inside the Main component, my AddCard component is also located here.
    
     return (
         <div className='main'>

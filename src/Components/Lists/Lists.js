@@ -9,32 +9,35 @@ import React, { useState } from "react";
 
 const Lists = ({ listName, randomImg, setListName, listTitle, list}) => {
 
+  
+  const [newCardTask, setNewCardTask] = useState([])  //newCardTask state will contain an array of all the cards added under the list
+  const [cardText, setNewCardText] = useState() //cardText state will store the text that goes inside the card
+  const [inputVisibility, setInputVisibility] = useState("none") //inputVisibility holds input styling which will be changed onClick
 
-  const [newCardTask, setNewCardTask] = useState([])
-  const [cardText, setNewCardText] = useState()
-  const [inputVisibility, setInputVisibility] = useState("none")
-
-  const showInputHandler = () => {
-    if (inputVisibility === "none") {
+  
+  const showInputHandler = () => { //This function will pass styling to the text area
+    if (inputVisibility === "none") { //if the element is hidden - display it or vice versa
       setInputVisibility("block")
     } else if (inputVisibility === "block") {
       setInputVisibility("none")
     }
   }
 
-  const addNewCardHandler = () => {
-    if (cardText === '') {
+
+  
+  const addNewCardHandler = () => {   //This function is responsible for creating a new array item in the newCardTask state
+    if (cardText === '') {  //text validation, this ensures that the user does not input an empty card name
       alert('Empty field')
     } else {
       setNewCardTask([
-        ...newCardTask,
+        ...newCardTask, //rest operator will ensure any previous array items remain in the array.
         {
-          card: cardText,
+          card: cardText, //array will only include the card text and a key
           id: Math.random() * 1000
         }
       ])
-      setNewCardText('')
-      showInputHandler()
+      setNewCardText('') //reset the empty text field
+      showInputHandler() //hide the input area after submission
     }
   }
 
@@ -45,7 +48,7 @@ const Lists = ({ listName, randomImg, setListName, listTitle, list}) => {
       <div className='list-items-wrapper'>
         <ListHeader listTitle={listTitle} setListName={setListName} listName={listName} list={list}></ListHeader>
         <ListImg randomImg={randomImg}></ListImg>
-        {newCardTask.map(card => (
+        {newCardTask.map(card => ( //mapping new card components here based on what is in the array and passing props
           <ListCard cardText={card.card} setNewCardTask={setNewCardTask} newCardTask={newCardTask} key={card.id}></ListCard>
         ))}
         <div className='list-footer'>

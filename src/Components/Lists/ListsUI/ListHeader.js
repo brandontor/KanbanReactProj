@@ -3,7 +3,7 @@ import './ListHeader.css'
 const ListHeader = ({listName, setListName, listTitle, list}) => {
 
 
-    const deleteListHandler = () => {
+    const deleteListHandler = () => { //this function is responsible for deleting lists onClick
         setListName(listName.filter(el => el.id !== list.id))
     }
 
